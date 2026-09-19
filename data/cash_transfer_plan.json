@@ -1,0 +1,123 @@
+[
+ {
+  "step_index": 1,
+  "action_index": 1,
+  "action_name": "verify_identity",
+  "display_name": "Verify beneficiary identity",
+  "params": {},
+  "start": 0,
+  "end": 2,
+  "duration": 2,
+  "resource": "Identity service"
+ },
+ {
+  "step_index": 2,
+  "action_index": 2,
+  "action_name": "confirm_eligibility",
+  "display_name": "Confirm programme eligibility",
+  "params": {},
+  "start": 2,
+  "end": 4,
+  "duration": 2,
+  "resource": "Eligibility officer"
+ },
+ {
+  "step_index": 3,
+  "action_index": 3,
+  "action_name": "approve_beneficiary",
+  "display_name": "Approve beneficiary",
+  "params": {},
+  "start": 4,
+  "end": 5,
+  "duration": 1,
+  "resource": "Approving officer"
+ },
+ {
+  "step_index": 4,
+  "action_index": 4,
+  "action_name": "generate_payment_instruction",
+  "display_name": "Generate payment instruction",
+  "params": {},
+  "start": 5,
+  "end": 6,
+  "duration": 1,
+  "resource": "Payment MIS"
+ },
+ {
+  "step_index": 5,
+  "action_index": 5,
+  "action_name": "submit_payment",
+  "display_name": "Submit payment instruction",
+  "params": {},
+  "start": 6,
+  "end": 7,
+  "duration": 1,
+  "resource": "Payment gateway"
+ },
+ {
+  "step_index": 6,
+  "action_index": 6,
+  "action_name": "attempt_payment",
+  "display_name": "Attempt beneficiary payment",
+  "params": {},
+  "start": 7,
+  "end": 9,
+  "duration": 2,
+  "resource": "Payment gateway"
+ },
+ {
+  "step_index": 7,
+  "action_index": 7,
+  "action_name": "lodge_grievance",
+  "display_name": "Lodge failed-payment grievance",
+  "params": {},
+  "start": 9,
+  "end": 10,
+  "duration": 1,
+  "resource": "Grievance desk"
+ },
+ {
+  "step_index": 8,
+  "action_index": 8,
+  "action_name": "review_grievance",
+  "display_name": "Review and resolve grievance",
+  "params": {},
+  "start": 10,
+  "end": 13,
+  "duration": 3,
+  "resource": "Grievance caseworker"
+ },
+ {
+  "step_index": 9,
+  "action_index": 9,
+  "action_name": "reauthorise_payment",
+  "display_name": "Reauthorise corrected payment",
+  "params": {},
+  "start": 13,
+  "end": 14,
+  "duration": 1,
+  "resource": "Approving officer"
+ },
+ {
+  "step_index": 10,
+  "action_index": 10,
+  "action_name": "execute_corrected_payment",
+  "display_name": "Execute corrected payment",
+  "params": {},
+  "start": 14,
+  "end": 17,
+  "duration": 3,
+  "resource": "Payment gateway"
+ },
+ {
+  "step_index": 11,
+  "action_index": 11,
+  "action_name": "notify_beneficiary",
+  "display_name": "Notify beneficiary of resolution",
+  "params": {},
+  "start": 14,
+  "end": 16,
+  "duration": 2,
+  "resource": "Communications service"
+ }
+]

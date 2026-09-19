@@ -1,0 +1,48 @@
+{
+ "scheme": "S8",
+ "action_index": "plan",
+ "premises": [
+  {
+   "label": "P1: replayed state well defined at every time point (S0)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P2: every action applicable (S1)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P3: every action contributes causally (S2)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P4: every action temporally feasible (S3)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P5: concurrent actions individually executable (S4)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P6: concurrent actions resource-safe (S5)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P7: all orderings necessary (S6)",
+   "holds": true,
+   "detail": ""
+  },
+  {
+   "label": "P8: all invariants maintained (S7)",
+   "holds": true,
+   "detail": ""
+  }
+ ],
+ "conclusion": "The plan is valid and achieves the goal.",
+ "accepted": true
+}

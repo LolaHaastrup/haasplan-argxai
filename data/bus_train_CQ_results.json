@@ -1,0 +1,989 @@
+[
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "1",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "board_bus is temporally feasible."
+ },
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "2",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Enabling: e(board_bus)=2 <= s(bus_travel)=2",
+    "holds": true,
+    "detail": "provides passenger_on_bus"
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "bus_travel is temporally feasible."
+ },
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "3",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Enabling: e(bus_travel)=7 <= s(passenger_platform_wait)=7",
+    "holds": true,
+    "detail": "provides arrived_at(train_station)"
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "passenger_platform_wait is temporally feasible."
+ },
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "4",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Enabling: e(bus_travel)=7 <= s(train_approach)=7",
+    "holds": true,
+    "detail": "provides arrived_at(train_station)"
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "train_approach is temporally feasible."
+ },
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "5",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Enabling: e(passenger_platform_wait)=10 <= s(board_train)=10",
+    "holds": true,
+    "detail": "provides ready_to_board"
+   },
+   {
+    "label": "Enabling: e(train_approach)=10 <= s(board_train)=10",
+    "holds": true,
+    "detail": "provides train_at_station(train_station)"
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "board_train is temporally feasible."
+ },
+ {
+  "CQ": "CQ1",
+  "Attacks via": "S1",
+  "Action(s)": "6",
+  "Outcome": "defeated",
+  "Detail": "S3's enabling-timing guarantee confirms start conditions present in the replayed state at the action's scheduled start time.",
+  "Defeated by": "S3",
+  "Defeating premises": [
+   {
+    "label": "Internal applicability (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Enabling: e(board_train)=11 <= s(train_travel)=11",
+    "holds": true,
+    "detail": "provides passenger_on_train"
+   },
+   {
+    "label": "Enabling: e(train_approach)=10 <= s(train_travel)=11",
+    "holds": true,
+    "detail": "provides train_at_station(train_station)"
+   },
+   {
+    "label": "No deadline constraint (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Plan completes at makespan t=19",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "train_travel is temporally feasible."
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "1",
+  "Outcome": "n/a",
+  "Detail": "No over-all invariant for this action.",
+  "Defeated by": "S7 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "2",
+  "Outcome": "defeated",
+  "Detail": "S7 confirms HoldsOver(invariant, (si,ei)): the invariant holds in the replayed state at the start and no concurrent action removes it during the open interval.",
+  "Defeated by": "S7",
+  "Defeating premises": [
+   {
+    "label": "bus_travel present",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Invariant inv(bus_travel) = {passenger_on_bus} exists",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "passenger_on_bus holds and is not deleted over (2,7)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Disruption would invalidate bus_travel and make G unreachable",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The invariant passenger_on_bus is maintained throughout bus_travel."
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "3",
+  "Outcome": "n/a",
+  "Detail": "No over-all invariant for this action.",
+  "Defeated by": "S7 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "4",
+  "Outcome": "n/a",
+  "Detail": "No over-all invariant for this action.",
+  "Defeated by": "S7 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "5",
+  "Outcome": "n/a",
+  "Detail": "No over-all invariant for this action.",
+  "Defeated by": "S7 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ2",
+  "Attacks via": "S1",
+  "Action(s)": "6",
+  "Outcome": "n/a",
+  "Detail": "No over-all invariant for this action.",
+  "Defeated by": "S7 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "1",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: at(bus,bus_stop)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: passenger_at(bus_stop)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No over-all invariants (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "board_bus is applicable over [0,2]."
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "2",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: at(bus,bus_stop)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: passenger_on_bus",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Invariant: passenger_on_bus holds over (2,7)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "bus_travel is applicable over [2,7]."
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "3",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: arrived_at(train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: is_train_station(train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No over-all invariants (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "passenger_platform_wait is applicable over [7,10]."
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "4",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: at(train,train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: arrived_at(train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No over-all invariants (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "train_approach is applicable over [7,10]."
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "5",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: ready_to_board",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: train_at_station(train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No over-all invariants (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "board_train is applicable over [10,11]."
+ },
+ {
+  "CQ": "CQ3",
+  "Attacks via": "S2",
+  "Action(s)": "6",
+  "Outcome": "defeated",
+  "Detail": "S1 confirms the action is executable and its end effects genuinely fire at completion time, so the produced effect is available for downstream use.",
+  "Defeated by": "S1",
+  "Defeating premises": [
+   {
+    "label": "Start: passenger_on_train",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Start: train_at_station(train_station)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No over-all invariants (vacuous)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No end conditions (vacuous)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "train_travel is applicable over [11,19]."
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "1",
+  "Outcome": "n/a",
+  "Detail": "No enabling dependency for this action.",
+  "Defeated by": "S6 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "2",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 1 (finish-to-start ordering certificate) directly certifies the enabling action finishes no later than this action begins.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 1)=2 <= s(Action 2)=2",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "board_bus produces effect needed by bus_travel",
+    "holds": true,
+    "detail": "the fluent passenger_on_bus"
+   },
+   {
+    "label": "Reversal would remove a required start condition (passenger_on_bus)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 1 before 2 is necessary."
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "3",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 1 (finish-to-start ordering certificate) directly certifies the enabling action finishes no later than this action begins.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 2)=7 <= s(Action 3)=7",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "bus_travel produces effect needed by passenger_platform_wait",
+    "holds": true,
+    "detail": "the fluent arrived_at(train_station)"
+   },
+   {
+    "label": "Reversal would remove a required start condition (arrived_at(train_station))",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 2 before 3 is necessary."
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "4",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 1 (finish-to-start ordering certificate) directly certifies the enabling action finishes no later than this action begins.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 2)=7 <= s(Action 4)=7",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "bus_travel produces effect needed by train_approach",
+    "holds": true,
+    "detail": "the fluent arrived_at(train_station)"
+   },
+   {
+    "label": "Reversal would remove a required start condition (arrived_at(train_station))",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 2 before 4 is necessary."
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "5",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 1 (finish-to-start ordering certificate) directly certifies the enabling action finishes no later than this action begins.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 3)=10 <= s(Action 5)=10",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "passenger_platform_wait produces effect needed by board_train",
+    "holds": true,
+    "detail": "the fluent ready_to_board"
+   },
+   {
+    "label": "Reversal would remove a required start condition (ready_to_board)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 3 before 5 is necessary."
+ },
+ {
+  "CQ": "CQ4",
+  "Attacks via": "S3",
+  "Action(s)": "6",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 1 (finish-to-start ordering certificate) directly certifies the enabling action finishes no later than this action begins.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 5)=11 <= s(Action 6)=11",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "board_train produces effect needed by train_travel",
+    "holds": true,
+    "detail": "the fluent passenger_on_train"
+   },
+   {
+    "label": "Reversal would remove a required start condition (passenger_on_train)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 5 before 6 is necessary."
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "1",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "2",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 1)=2 <= s(Action 2)=2",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "board_bus produces effect needed by bus_travel",
+    "holds": true,
+    "detail": "the fluent passenger_on_bus"
+   },
+   {
+    "label": "Reversal would remove a required start condition (passenger_on_bus)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 1 before 2 is necessary."
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "3",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 2)=7 <= s(Action 3)=7",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "bus_travel produces effect needed by passenger_platform_wait",
+    "holds": true,
+    "detail": "the fluent arrived_at(train_station)"
+   },
+   {
+    "label": "Reversal would remove a required start condition (arrived_at(train_station))",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 2 before 3 is necessary."
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "4",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 2)=7 <= s(Action 4)=7",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "bus_travel produces effect needed by train_approach",
+    "holds": true,
+    "detail": "the fluent arrived_at(train_station)"
+   },
+   {
+    "label": "Reversal would remove a required start condition (arrived_at(train_station))",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 2 before 4 is necessary."
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "5",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 3)=10 <= s(Action 5)=10",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "passenger_platform_wait produces effect needed by board_train",
+    "holds": true,
+    "detail": "the fluent ready_to_board"
+   },
+   {
+    "label": "Reversal would remove a required start condition (ready_to_board)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 3 before 5 is necessary."
+ },
+ {
+  "CQ": "CQ5",
+  "Attacks via": "S3",
+  "Action(s)": "6",
+  "Outcome": "defeated",
+  "Detail": "S6's Premise 3 (reversal would violate a timing constraint) certifies that the current schedule's window respects the deadline.",
+  "Defeated by": "S6",
+  "Defeating premises": [
+   {
+    "label": "Ordering: e(Action 5)=11 <= s(Action 6)=11",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "board_train produces effect needed by train_travel",
+    "holds": true,
+    "detail": "the fluent passenger_on_train"
+   },
+   {
+    "label": "Reversal would remove a required start condition (passenger_on_train)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "The ordering 5 before 6 is necessary."
+ },
+ {
+  "CQ": "CQ6",
+  "Attacks via": "S4",
+  "Action(s)": "(3, 4)",
+  "Outcome": "defeated",
+  "Detail": "S5 (Resource & Concurrency Feasibility) confirms S4 holds: each concurrent action holds all required start conditions in the replayed state at the overlap start time, and S5 additionally certifies disjoint resource locks and mutual invariant compatibility.",
+  "Defeated by": "S5",
+  "Defeating premises": [
+   {
+    "label": "S4 holds for the pair",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "No resource conflict: disjoint exclusive resource locks (None and Train)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Mutual invariant compatibility: neither action's effects delete an invariant the other requires",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Concurrency justified: 3 < 6",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "Running the pair concurrently is safe and beneficial."
+ },
+ {
+  "CQ": "CQ7",
+  "Attacks via": "S5",
+  "Action(s)": "(3, 4)",
+  "Outcome": "defeated",
+  "Detail": "S4 confirms each action's individual applicability (via S1), from which each action's resource usage and boundary conditions are known; disjoint lock sets and mutual invariant compatibility follow directly.",
+  "Defeated by": "S4",
+  "Defeating premises": [
+   {
+    "label": "Intervals overlap: [7,10] and [7,10]",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "passenger_platform_wait individually applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "train_approach individually applicable (S1)",
+    "holds": true,
+    "detail": ""
+   }
+  ],
+  "Defeating conclusion": "Both actions may legally begin at the overlap start."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(1, 2)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'passenger_on_bus' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [2]"
+   }
+  ],
+  "Defeating conclusion": "board_bus contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(2, 3)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'at(bus,train_station)' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [3, 4]"
+   }
+  ],
+  "Defeating conclusion": "bus_travel contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(2, 4)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'at(bus,train_station)' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [3, 4]"
+   }
+  ],
+  "Defeating conclusion": "bus_travel contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(3, 5)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'ready_to_board' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [5]"
+   }
+  ],
+  "Defeating conclusion": "passenger_platform_wait contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(4, 5)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'train_at_station(train_station)' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [5, 6]"
+   }
+  ],
+  "Defeating conclusion": "train_approach contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(5, 6)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'passenger_on_train' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [6]"
+   }
+  ],
+  "Defeating conclusion": "board_train contributes causally to G."
+ },
+ {
+  "CQ": "CQ8",
+  "Attacks via": "S6",
+  "Action(s)": "(4, 6)",
+  "Outcome": "defeated",
+  "Detail": "S2 identifies the causal dependency the ordering protects: the predecessor's effect is required by the successor as a start condition. Reversal would leave it absent from the replayed state.",
+  "Defeated by": "S2",
+  "Defeating premises": [
+   {
+    "label": "Action applicable (S1)",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect 'train_at_station(train_station)' produced",
+    "holds": true,
+    "detail": ""
+   },
+   {
+    "label": "Effect consumed or satisfies G",
+    "holds": true,
+    "detail": "consumed by steps [5, 6]"
+   }
+  ],
+  "Defeating conclusion": "train_approach contributes causally to G."
+ },
+ {
+  "CQ": "CQ9",
+  "Attacks via": "S7",
+  "Action(s)": "2",
+  "Outcome": "n/a",
+  "Detail": "No concurrent action runs during this action's execution interval, so no threat to the invariant can arise.",
+  "Defeated by": "S5 (n/a)",
+  "Defeating premises": [],
+  "Defeating conclusion": ""
+ }
+]

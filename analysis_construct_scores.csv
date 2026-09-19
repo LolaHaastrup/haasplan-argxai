@@ -1,0 +1,5 @@
+participant_code,domain,verdict_shown,Comprehension,Perceived correctness,Contestability,Transparency,Satisfaction,Failure comprehension,Confidence after dialogue,coverage,moves,seconds,questions_asked,drill_down_moves,distinct_cq_types,closed_by_user,drill_down_ratio
+P-WTWR7J37,bus_train_late,REJECTED,4.0,4.0,4.0,4.0,4.0,4.0,4,0.025,2,0.4,1,0,1,False,0.0
+P-RA77A6MW,bus_train,ACCEPTED,4.0,4.0,4.0,4.0,4.0,,4,0.025,2,0.4,1,0,1,False,0.0
+P-7NHFO7YD,bus_train,ACCEPTED,4.0,4.0,4.0,4.0,4.0,,4,0.025,2,0.4,1,0,1,False,0.0
+P-Z7HPWUWL,bus_train,ACCEPTED,4.0,4.0,4.0,4.0,4.0,,4,0.025,2,0.4,1,0,1,False,0.0

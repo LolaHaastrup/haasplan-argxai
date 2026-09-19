@@ -1,0 +1,14 @@
+{
+ "verify_identity": "Verify beneficiary identity",
+ "confirm_eligibility": "Confirm programme eligibility",
+ "approve_beneficiary": "Approve beneficiary",
+ "generate_payment_instruction": "Generate payment instruction",
+ "submit_payment": "Submit payment instruction",
+ "attempt_payment": "Attempt beneficiary payment",
+ "lodge_grievance": "Lodge failed-payment grievance",
+ "review_grievance": "Review and resolve grievance",
+ "reauthorise_payment": "Reauthorise corrected payment",
+ "execute_corrected_payment": "Execute corrected payment",
+ "notify_beneficiary": "Notify beneficiary of resolution",
+ "eligibility_lapse": "Beneficiary record marked ineligible"
+}

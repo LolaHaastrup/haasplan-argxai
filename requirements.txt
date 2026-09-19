@@ -1,0 +1,4 @@
+# The deployed app needs neither unified-planning nor a planning engine:
+# it loads the JSON artefacts the notebook produces.
+streamlit==1.63.0
+gspread==6.1.4
